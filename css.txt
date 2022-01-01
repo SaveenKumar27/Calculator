@@ -1,0 +1,51 @@
+#outside {
+ margin: 19.7vh auto;
+ height: 60vh;
+ width: 40vw;
+ padding-top: 5px;
+ background-color: gainsboro;}
+
+ #heading{
+	 margin: 30px 10px 10px 10px;
+	 background-color: black;
+	 color: white;
+	 font-size: 30px;
+	 height: 7vh;
+	 text-align: center;
+	 padding-top: 10px;
+ }
+
+ #input{
+	 margin:0px 10px 10px 10px;
+	 background-color: white;
+	 color: black;
+	 height: 10vh;
+	 text-align: right;
+ }
+
+ #num{
+	 height: 100%;
+	 width:50%;
+	 font-size: 30px;
+	 text-align: right;
+	 border: none;
+ }
+
+
+ table{
+	 margin: 5px 10px 5px 10px;
+	 width: 97%;
+ }
+ table td{
+	 height:6.2vh;
+	 width:25%;
+	 text-align: center;
+	 background-color: white;
+	 color: black;
+	 font-size: 25px;
+ }
+
+ .red{
+	 background-color:#CD5C5C;
+	 color: white;
+ }

@@ -1,0 +1,295 @@
+"use strict";
+{              			// using block level scope
+let a=0;
+let b=0;
+let addition=false;
+let subtraction=false;
+let multiplication=false;
+let division=false;
+let decimal=false;
+
+let done=false;
+
+let sum=document.getElementById("+");
+sum.addEventListener('click',function(){
+    done=true;
+    addition=true;
+    document.forms.num.value="+";
+});
+
+let sub=document.getElementById("-");
+sub.addEventListener('click',function(){
+    done=true;
+    subtraction=true;
+    document.forms.num.value="-";
+});
+
+let mul=document.getElementById("*");
+mul.addEventListener('click',function(){
+    done=true;
+    multiplication=true;
+    document.forms.num.value="*";
+});
+
+let div=document.getElementById("/");
+div.addEventListener('click',function(){
+    done=true;
+    division=true;
+    document.forms.num.value="/";
+});
+
+let per=document.getElementById("<-");
+per.addEventListener('click',function(){
+    if(done==false){
+        a=parseInt(a/10);
+        document.forms.num.value=a;}
+    else{
+        b=parseInt(b/10);
+        document.forms.num.value=b;
+    }
+
+});
+
+let plusminus=document.getElementById("+/-");
+plusminus.addEventListener('click',function(){
+    a=-a;
+    document.forms.num.value=a;
+});
+
+let dec=document.getElementById(".");
+dec.addEventListener('click',function(){
+    decimal=true;
+    if(done==false){
+        document.forms.num.value=a +".";}
+    else{
+        document.forms.num.value=b +".";}
+    });
+
+
+let n0=document.getElementById("0");
+n0.addEventListener('click',function(){
+    if(done==false){
+        if(decimal==true){
+            decimal=false;
+            a=a+0.0;}
+        else{
+            a=a*10+0;}
+    document.forms.num.value=a;}
+    else{
+        if(decimal==true){
+            decimal=false;
+            b=b+0.0;}
+        else{
+            b=b*10+0;}
+        document.forms.num.value=b;}
+});
+
+let n1=document.getElementById("1");
+n1.addEventListener('click',function(){
+    if(done==false){
+        if(decimal==true){
+            decimal=false;
+            a=a+0.1;}
+        else{
+            a=a*10+1;}
+    document.forms.num.value=a;}
+    else{
+        if(decimal==true){
+            decimal=false;
+            b=b+0.1;}
+        else{
+            b=b*10+1;}
+        document.forms.num.value=b;}
+});
+
+
+let n2=document.getElementById("2");
+n2.addEventListener('click',function(){
+    if(done==false){
+        if(decimal==true){
+            decimal=false;
+            a=a+0.2;}
+        else{
+            a=a*10+2;}
+    document.forms.num.value=a;}
+    else{
+        if(decimal==true){
+            decimal=false;
+            b=b+0.2;}
+        else{
+            b=b*10+2;}
+        document.forms.num.value=b;}
+});
+
+let n3=document.getElementById("3");
+n3.addEventListener('click',function(){
+    if(done==false){
+        if(decimal==true){
+            decimal=false;
+            a=a+0.3;}
+        else{
+            a=a*10+3;}
+    document.forms.num.value=a;}
+    else{
+        if(decimal==true){
+            decimal=false;
+            b=b+0.3;}
+        else{
+            b=b*10+3;}
+        document.forms.num.value=b;}
+});
+
+
+let n4=document.getElementById("4");
+n4.addEventListener('click',function(){
+    if(done==false){
+        if(decimal==true){
+            decimal=false;
+            a=a+0.4;}
+        else{
+            a=a*10+4;}
+    document.forms.num.value=a;}
+    else{
+        if(decimal==true){
+            decimal=false;
+            b=b+0.4;}
+        else{
+            b=b*10+4;}
+        document.forms.num.value=b;}
+});
+
+
+let n5=document.getElementById("5");
+n5.addEventListener('click',function(){
+    if(done==false){
+        if(decimal==true){
+            decimal=false;
+            a=a+0.5;}
+        else{
+            a=a*10+5;}
+    document.forms.num.value=a;}
+    else{
+        if(decimal==true){
+            decimal=false;
+            b=b+0.5;}
+        else{
+            b=b*10+5;}
+        document.forms.num.value=b;}
+});
+
+
+let n6=document.getElementById("6");
+n6.addEventListener('click',function(){
+    if(done==false){
+        if(decimal==true){
+            decimal=false;
+            a=a+0.6;}
+        else{
+            a=a*10+6;}
+    document.forms.num.value=a;}
+    else{
+        if(decimal==true){
+            decimal=false;
+            b=b+0.6;}
+        else{
+            b=b*10+6;}
+        document.forms.num.value=b;}
+});
+
+
+let n7=document.getElementById("7");
+n7.addEventListener('click',function(){
+    if(done==false){
+        if(decimal==true){
+            decimal=false;
+            a=a+0.7;}
+        else{
+            a=a*10+7;}
+    document.forms.num.value=a;}
+    else{
+        if(decimal==true){
+            decimal=false;
+            b=b+0.7;}
+        else{
+            b=b*10+7;}
+        document.forms.num.value=b;}
+});
+
+
+let n8=document.getElementById("8");
+n8.addEventListener('click',function(){
+    if(done==false){
+        if(decimal==true){
+            decimal=false;
+            a=a+0.8;}
+        else{
+            a=a*10+8;}
+    document.forms.num.value=a;}
+    else{
+        if(decimal==true){
+            decimal=false;
+            b=b+0.8;}
+        else{
+            b=b*10+8;}
+        document.forms.num.value=b;}
+});
+
+
+let n9=document.getElementById("9");
+n9.addEventListener('click',function(){
+    if(done==false){
+        if(decimal==true){
+            decimal=false;
+            a=a+0.9;}
+        else{
+            a=a*10+9;}
+    document.forms.num.value=a;}
+    else{
+        if(decimal==true){
+            decimal=false;
+            b=b+0.9;}
+        else{
+            b=b*10+9;}
+        document.forms.num.value=b;}
+});
+
+let nill=document.getElementById("ac");
+nill.addEventListener('click',function(){
+    a=0;
+    b=0;
+    document.forms.num.value=0;
+    addition=false;
+    subtraction=false;
+    multiplication=false;
+    division=false;
+    done=false;
+    decimal=false;
+});
+
+let final =document.getElementById("=");
+final.addEventListener('click',function(){
+    if(addition==true){
+        a=a+b;
+        document.forms.num.value=a;}
+    if(subtraction==true){
+        a=a-b;
+        document.forms.num.value=a;}
+    if(multiplication==true){
+        a=a*b;
+        document.forms.num.value=a;}
+    if(division==true){
+        if(a==0&&b==0){
+            document.forms.num.value="Error";}
+        else{
+            a=a/b;
+        document.forms.num.value=a;}}
+    addition=false;
+    subtraction=false;
+    multiplication=false;
+    division=false;
+    done=false;
+    decimal=false;
+    b=0;
+});
+
+}
